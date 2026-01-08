@@ -1,7 +1,7 @@
 ﻿{
     "name": "com.azathrix.timer",
     "displayName": "Timer",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "unity": "6000.3",
     "description": "\u8ba1\u65f6\u5668\u76f8\u5173\u529f\u80fd",
     "author": {

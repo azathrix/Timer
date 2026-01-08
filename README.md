@@ -1,8 +1,42 @@
-# Timer
+<h1 align="center">Timer</h1>
 
-Unity 定时器系统，提供延迟执行、重复执行、帧计数、条件等待等功能。
+<p align="center">
+  Unity 定时器系统，提供延迟执行、重复执行、帧计数、条件等待等功能
+</p>
+
+<p align="center">
+  <a href="https://github.com/Azathrix/Timer"><img src="https://img.shields.io/badge/GitHub-Timer-black.svg" alt="GitHub"></a>
+  <a href="https://www.npmjs.com/package/com.azathrix.timer"><img src="https://img.shields.io/npm/v/com.azathrix.timer.svg" alt="npm"></a>
+  <a href="https://github.com/Azathrix/Timer/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
+  <a href="https://unity.com/"><img src="https://img.shields.io/badge/Unity-6000.3+-black.svg" alt="Unity"></a>
+</p>
+
+---
+
+## 特性
+
+- 延迟执行、重复执行
+- 帧计数（下一帧、延迟帧数、帧重复）
+- 条件等待（WaitUntil、WaitWhile）
+- 进度回调，配合 Lerp 使用
+- Builder 模式，复杂配置
+- 暂停/恢复/取消/重置
 
 ## 安装
+
+### 方式一：Package Manager（推荐）
+
+1. 打开 `Edit > Project Settings > Package Manager`
+2. 在 `Scoped Registries` 中添加：
+   - Name: `Azathrix`
+   - URL: `https://registry.npmjs.org`
+   - Scope(s): `com.azathrix`
+3. 点击 `Save`
+4. 打开 `Window > Package Manager`
+5. 切换到 `My Registries`
+6. 找到 `Timer` 并安装
+
+### 方式二：修改 manifest.json
 
 在 `Packages/manifest.json` 中添加：
 
@@ -21,7 +55,14 @@ Unity 定时器系统，提供延迟执行、重复执行、帧计数、条件�
 }
 ```
 
-> 注册 `com.azathrix` scope 后，可以在 Package Manager 的 "My Registries" 中发现更多 Azathrix 工具包。
+### 方式三：Git URL
+
+1. 打开 `Window > Package Manager`
+2. 点击 `+` > `Add package from git URL...`
+3. 输入：`https://github.com/Azathrix/Timer.git`
+
+> ⚠️ Git 方式无法自动解析依赖，需要先手动安装：
+> - [Azathrix Framework](https://github.com/Azathrix/AzathrixFramework.git)
 
 ## 快速开始
 
@@ -172,10 +213,6 @@ timerManager.CancelAll(gameObject);  // 取消指定 GameObject 的定时器
 ## 依赖
 
 - [Azathrix Framework](https://www.npmjs.com/package/com.azathrix.framework)
-
-## 要求
-
-- Unity 6000.3 或更高版本
 
 ## License
 
