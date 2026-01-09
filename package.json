@@ -6,7 +6,7 @@
     "description": "\u8ba1\u65f6\u5668\u76f8\u5173\u529f\u80fd",
     "license": "MIT",
     "author": {
-        "name": "azathrix"
+        "name": "Azathrix"
     },
     "dependencies": {
         "com.azathrix.framework": "0.0.4"
